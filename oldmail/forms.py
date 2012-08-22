@@ -76,7 +76,7 @@ class AccountInviteForm(forms.ModelForm):
 
 
 class AccountAddForm(forms.ModelForm):
-    account = forms.CharField()
+    account = forms.CharField(label=_("Organization Name"))
     email = forms.CharField()
     first_name = forms.CharField()
     last_name = forms.CharField()
